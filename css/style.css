@@ -36,12 +36,12 @@ header .container{position:absolute;top:50%;left:50%;transform:translate(-50%,-5
 header nav{
 	position:absolute;
 	bottom:0;
-	height:50px;
+	width:100%;
 	background-color:rgba(255,255,255,.1);
 	text-align:center;
 }
 .menu{list-style:none;margin:0;padding:0;}
-.menu li{display:inline-block;padding:10px 30px;cursor:pointer;}
+.menu li{display:inline-block;padding:30px 50px;cursor:pointer;}
 .round{border-radius:100%;overflow:hidden;}
 .profile-picture{
 	position:relative;
