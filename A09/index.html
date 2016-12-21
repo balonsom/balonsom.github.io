@@ -1,0 +1,291 @@
+<!Doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OneSound - Tu música favorita</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+	  <symbol id="scroll-down" viewBox="643.5 386 22.1 21.9">
+		<path d="M665.6,396.3c0,0.3-0.1,0.7-0.4,0.9l-9.8,10.4c-0.5,0.5-1.3,0.5-1.7,0l-9.8-10.4c-0.5-0.5-0.5-1.3,0-1.8s1.3-0.5,1.7,0l8.9,9.5l8.9-9.5c0.5-0.5,1.3-0.5,1.7,0C665.5,395.6,665.6,396,665.6,396.3z"></path>
+      </symbol>
+	  <symbol viewBox="0 0 60.928 62" id="playlist">
+		<g fill="none" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M55.24 36.043l1.446-3.782c1.094-3.092 6.72-14.538-5.513-22.694C47.39 7.043 47 3 47 3M47 53c0 3.782-2.996 7-7.174 7s-7.565-3.388-7.565-7.565S35.823 46 40 46h7v7zM47 47.392V2"></path>
+		</g>
+		<path fill="none" stroke-width="4" stroke-miterlimit="10" d="M2 16h30.26M2 27h30.26M2 37h25.217M2 46h17.652" stroke-linecap="round" stroke-linejoin="round"></path>
+	  </symbol>
+	</svg>
+	<header class="navbar navbar-default navbar-fixed-top navbar-semi-transparent">
+	  <div class="container">
+		<a href="index.html" class="hidden-xs">
+		  <div class="logo uppercase">One<span>Sound</span></div>
+		</a>
+		<nav>
+		  <ul class="center">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</nav>
+	  </div>
+	</header>
+	<div class="jumbotron jumbotron-hero">
+	  <div class="container text-white center">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="glitch-svg" width="0" height="0">
+		  <defs>
+			<filter id="filter">
+			  <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp"></feTurbulence>
+			  <feOffset dx="0" dy="-90" result="warpOffset"></feOffset>
+			  <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+			</filter>
+		  </defs>
+		</svg>
+		<h1 class="uppercase">More than a music app</h1>
+		<h6 class="uppercase">Listen to your favourite music on all your devices</h6>
+		<div class="button button-blue-light"><i class="fa fa-play" aria-hidden="true"></i> Listen Music</div>
+		<div class="button button-blue"><i class="fa fa-download" aria-hidden="true"></i> Download App</div>
+	  </div>
+	</div>
+	<div class="container">
+	  <a class="scroll-button pull-right" href="#features">
+		<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#scroll-down"></use></svg>
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#scroll-down"></use></svg>
+	  </a>
+	</div>
+	<div id="features" class="jumbotron white-bg features">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-4">
+			<div class="container">
+			  <h4 class="uppercase less-opacity hidden-xs">Thousands of</h4>
+			  <h2 class="uppercase everywhere-title title">Tracks</h2>
+			  <p>
+				We are always on the lookout for new and dynamic music that we can add to our ever-expandig library 
+				of music tracks through the Internet stream. We trend artists, list top tracks and feature recently 
+				added ones to make our collection comprehensive.
+			  </p>
+			  <h4 class="uppercase less-opacity hidden-xs">Stay</h4>
+			  <h2 class="uppercase connected-title title">Connected</h2>
+			  <p>Let us know about kinds of musical performance you like and leave it on us to do the rest.</p>
+			</div>
+		  </div>
+		  <div class="col-md-4 hidden-xs">
+			<div class="container-fluid">
+			  <div class="iphone-mockup"></div>
+			</div>
+		  </div>
+		  <div class="col-md-4">
+			<div class="container">
+			  <h4 class="uppercase less-opacity hidden-xs">Better</h4>
+			  <h2 class="uppercase suggestions-title title">Suggestions</h2>
+			  <p>
+				We help you figure out your music preferences by studying your listening habits and requested types. 
+				The more you listen to music through us, the better we are able to recommend apt music tracks that 
+				you will enjoy. We trend to personalized suggestions based on.
+			  </p>
+			  <h4 class="uppercase less-opacity hidden-xs">Powered by</h4>
+			  <h2 class="uppercase soundcloud-title title">SoundCloud</h2>
+			  <p class="last">We bring the world's musicans, podcasters, composers, instrumentatlits and bands together into one app.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="parallax-bg">
+	  <div class="container well text-white">
+		<div class="row">
+		  <div class="col-md-8">
+			<div class="container-fluid">
+			  <h4 class="uppercase less-opacity">Avalible on the</h4>
+			  <h1 class="uppercase">App Store</h1>
+			  <p>
+				Since we released the OneSound application is getting bigger and bigger. If you have not yet joined our community 
+				start now by downloading the app on your phone and follow the following steps in order to 
+				<span class="strong">register your account for free</span>. Once you are done, simply enjoy the music as we do!
+			  </p>
+			  <p class="read-more"><a href="">Read more</a></p>
+			</div>
+		  </div>
+		  <div class="col-md-4 hidden-xs">
+			<div class="container-fluid center">
+			  <div class="progress-radial progress-85">
+				<div class="overlay">1,316,240<span class="uppercase">Downloads</span></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container well text-white">
+		<div class="row">
+		  <div class="col-md-8">
+			<div class="container-fluid">
+			  <h4 class="uppercase less-opacity">Earn more and more</h4>
+			  <h1 class="uppercase">Beat Points</h1>
+			  <p>
+				Your music fuel points multiply with the minutes you spend with OneSound. Beat other users with the points you 
+				earn as it decides the accuracy level of our track suggestions. This is your chance to unravel which music 
+				is soulful to your ears and who sings to the real you.
+			  </p>
+			  <p class="read-more"><a href="">Read more</a></p>
+			</div>
+		  </div>
+		  <div class="col-md-4 hidden-xs">
+			<div class="container-fluid center">
+			  <div class="progress-radial progress-65">
+				<div class="overlay">16,240<span class="uppercase">Beat Points</span></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="jumbotron mailing-list text-white center">
+	  <div class="container">
+		<h2 class="uppercase">Stay Updated</h2>
+		<h6 class="uppercase">Don't miss out on demos and updates.</h6>
+		<form>
+		  <div class="mailing-fieldset">
+			<input class="mailing-input" name="EMAIL" placeholder="Your email adress" />
+			<button type="submit" class="mailing-submit button-dark" name="subscribe"><i class="fa fa-envelope hidden-xs" aria-hidden="true"></i> Sign Up</button>
+		  </div>
+		</form>
+	  </div>
+	  <div class="container song">
+		<div class="row">
+		  <div class="col-md-4">
+			<div class="container">
+			  <div class="song-field">
+				<div class="song-field-front">
+				  <figure class="song-thumb" style="background-image:url('https://i1.sndcdn.com/artworks-000146780072-z8inm0-t500x500.jpg')">
+					<a class="song-thumb-link">
+					  <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
+					</a>
+				  </figure>
+				  <h6>This Girl<span>Kungs (Cookin' On 3 Burners Remix)</span></h6>
+				</div>
+				<div class="song-field-back">
+				  <ul class="uppercase center">
+					<li><i class="fa fa-plus-circle" aria-hidden="true"></i> Queue</li>
+					<li><i class="fa fa-play-circle" aria-hidden="true"></i> Play</li>
+					<li><i class="fa fa-share-alt" aria-hidden="true"></i> Share</li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4">
+			<div class="container">
+			  <div class="song-field">
+				<div class="song-field-front">
+				  <figure class="song-thumb" style="background-image:url('https://i1.sndcdn.com/artworks-000076622771-xbd32q-t500x500.jpg')">
+					<a class="song-thumb-link">
+					  <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
+					</a>
+				  </figure>
+				  <h6>Found It All <span>Timeflies (Krewella & Zedd Remix)</span></h6>
+				</div>
+				<div class="song-field-back">
+				  <ul class="uppercase center">
+					<li><i class="fa fa-plus-circle" aria-hidden="true"></i> Queue</li>
+					<li><i class="fa fa-play-circle" aria-hidden="true"></i> Play</li>
+					<li><i class="fa fa-share-alt" aria-hidden="true"></i> Share</li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4">
+			<div class="container">
+			  <div class="song-field">
+				<div class="song-field-front">
+				  <figure class="song-thumb" style="background-image:url('https://i1.sndcdn.com/artworks-000135830919-dd8kfp-t500x500.jpg')">
+					<a class="song-thumb-link">
+					  <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
+					</a>
+				  </figure>
+				  <h6>Rivers <span>Thomas Jack (KØNE Remix)</span></h6>
+				</div>
+				<div class="song-field-back">
+				  <ul class="uppercase center">
+					<li><i class="fa fa-plus-circle" aria-hidden="true"></i> Queue</li>
+					<li><i class="fa fa-play-circle" aria-hidden="true"></i> Play</li>
+					<li><i class="fa fa-share-alt" aria-hidden="true"></i> Share</li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="container song">
+		<div class="row">
+		<div class="col-md-6">
+		  <h3 class="playlist-title"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#playlist"></use></svg>Playlist</h3>
+		  <div class="player-queue-list-mesagge">
+			<div class="content-container">Drag & drop tracks here</div>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  
+		</div>
+		</div>
+	  </div>
+	</div>
+	<footer class="text-white">
+	  <div class="copyrights">© Copyright 2016 <span>OneSound</span><br />All other copyrights and trademarks are property of their respective owners.</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	var Glitch = (function () {
+		function Glitch() {
+			this._text = document.querySelector('.glitch');
+			this._filter = document.querySelector('#glitch-svg');
+			this._turb = this._filter.querySelector('#filter feTurbulence');
+			this._turbVal = { val: 0.000001 };
+			this._turbValX = { val: 0.000001 };
+			this.createTimeline();
+		}
+		Glitch.prototype.createTimeline = function () {
+			var _this = this;
+			this.timeline = new TimelineMax({
+				repeat: -1,
+				repeatDelay: 1,
+				onUpdate: function () {
+					_this._turb.setAttribute('baseFrequency', _this._turbVal.val + ' ' + _this._turbValX.val);
+				}
+			});
+			// this.timeline.from(this._text, 3, { opacity: 1, scale: 1 });
+			this.timeline.to(this._turbValX, 0.1, { val: 0.4, ease: Power0.easeNone }, 3);
+			this.timeline.to(this._turbVal, 0.1, { val: 0.02, ease: Power0.easeNone }, 3);
+			this.timeline.set(this._turbValX, { val: 0.0, ease: Power0.easeNone });
+			this.timeline.set(this._turbVal, { val: 0.0, ease: Power0.easeNone });
+			this.timeline.to(this._turbValX, 0.4, { val: 0.4, ease: Power0.easeNone }, 5);
+			this.timeline.to(this._turbVal, 0.4, { val: 0.02, ease: Power0.easeNone }, 5);
+			this.timeline.set(this._turbValX, { val: 0.0, ease: Power0.easeNone });
+			this.timeline.set(this._turbVal, { val: 0.0, ease: Power0.easeNone });
+		};
+		return Glitch;
+	}());
+	new Glitch();
+	$(document).on('click', '.scroll-button', function(event){
+		event.preventDefault();
+		var elementID = $.attr(this, 'href');
+		$('html, body').animate({
+			scrollTop: $(elementID).offset().top -80
+		}, 800);
+	});
+  </script>
+</body>
+</html>
+
+
