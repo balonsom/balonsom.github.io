@@ -41,9 +41,10 @@ header nav{
 	text-align:center;
 }
 .menu{list-style:none;margin:0;padding:0;}
-.menu li{display:inline-block;padding:30px 50px;cursor:pointer;}
-.menu li a{color:#fff;transition:opacity 400ms;}
-.menu li a:hover{opacity:.7;}
+.menu li{display:inline-block;padding:30px 50px;background-color:rgba(255,255,255,0);transition:all 400ms;cursor:pointer;}
+.menu li:hover{background-color:rgba(255,255,255,1);}
+.menu li a{color:#fff;}
+.menu li a:hover{text-decoration:none;}
 .round{border-radius:100%;overflow:hidden;}
 .profile-picture{
 	position:relative;
