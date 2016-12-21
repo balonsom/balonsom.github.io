@@ -165,5 +165,13 @@
   <footer>
 	<div class="copyright">© 2016 <span>Borja Alonso-Majagranzas</span>. All rights reserved.</div>
   </footer>
+  <script type="text/javascript">
+	$('.arrow-down').on('click', function(e){
+		e.preventDefault;
+		$('html, body').animate({
+			scrollTop: $('.content').offset().top
+		}, 800);
+	});
+  </script>
 </body>
 </html>
