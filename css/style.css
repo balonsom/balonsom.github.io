@@ -41,9 +41,9 @@ header nav{
 	text-align:center;
 }
 .menu{list-style:none;margin:0;padding:0;}
-.menu li{display:inline-block;padding:0;background-color:rgba(255,255,255,0);transition:all 400ms;cursor:pointer;}
+.menu li{display:inline-block;padding:0;margin:0;background-color:rgba(255,255,255,0);transition:all 400ms;cursor:pointer;}
 .menu li:hover{background-color:rgba(255,255,255,.2);}
-.menu li a{display:block;color:#fff;padding:30px 50px;}
+.menu li a{display:block;color:#fff;padding:30px 50px;margin:0;}
 .menu li a:hover{text-decoration:none;}
 .round{border-radius:100%;overflow:hidden;}
 .profile-picture{
