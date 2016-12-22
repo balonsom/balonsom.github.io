@@ -44,7 +44,7 @@ header nav{
 .menu li{display:inline-block;padding:0;margin:0;background-color:rgba(255,255,255,0);transition:all 400ms;cursor:pointer;}
 .menu li:hover{background-color:rgba(255,255,255,.2);}
 .menu li a{display:block;color:#fff;padding:30px 50px;margin:0;}
-.menu li a:hover{text-decoration:none;}
+.menu li a:hover,.menu li a:focus{text-decoration:none;}
 .round{border-radius:100%;overflow:hidden;}
 .profile-picture{
 	position:relative;
