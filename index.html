@@ -30,18 +30,18 @@
   </svg>
   <header>
 	<div class="container">
-	  <div class="profile-picture round">
-		
-	  </div>
+	  <div class="profile-picture round"></div>
 	  <h1>Borja Alonso-Majagranzas</h1>
 	  <h2>Web Designer / Developer</h2>
+	  <div id="projects-wrapper" class="row">
+	  </div>
 	</div>
 	<div class="arrow-down">
 	  <span class="sr-only">See More</span>
 	  <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrowDown"></use></svg>
 	</div>
 	<nav>
-	  <ul class="menu">
+	  <ul id="nav-menu" class="menu">
 		<li><a href="A06">Cartelera de Cine</a></li>
 		<li><a href="A09">OneSound</a></li>
 	  </ul>
@@ -180,6 +180,30 @@
 			scrollTop: $('.content').offset().top
 		}, 800);
 	});
+	var xmlhttp = new XMLHttpRequest();
+	var url = "actividades.json";
+
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var myArr = JSON.parse(this.responseText);
+			myFunction(myArr);
+		}
+	};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+
+	function myFunction(arr) {
+		var projects = "";
+		var menu = "";
+		for(var i = 0; i < arr.length; i++) {
+			projects += '<div class="col-md-4"><a href="'+arr[i].link+'" title="Ver página" target="_blank"><div class="project-card"><div class="project-header" style="background-image:url(img/projects/'+
+			arr[i].imagen+')"></div><div class="project-content"><p class="title">'+arr[i].nombre+'</p><p class="description">'+
+			arr[i].descripcion+'</p></div></div></a></div>';
+			menu += '<li><a href="'+arr[i].link+'">'+arr[i].titulo+'</a></li>';
+		}
+		document.getElementById('projects-wrapper').innerHTML = projects;
+		document.getElementById('nav-menu').innerHTML = menu;
+	}
   </script>
 </body>
 </html>

@@ -18,9 +18,9 @@
 		</a>
 		<nav>
 		  <ul class="center">
-			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About us</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li class="active"><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
 	  </div>
@@ -36,25 +36,36 @@
 			</filter>
 		  </defs>
 		</svg>
-		<h2 class="uppercase center">Contact Us</h2>
-		<form>
+		<h2 class="uppercase center">Contact Us!</h2>
+		<form class="container-fluid">
 		  <div class="row">
-			<div class="col-md-6">
-			  <div class="contact-field">
-				<div class="contact-field-front">
-				</div>
-				<div class="contact-field-back">
-				  <ul class="uppercase center">
-					<li><i class="fa fa-plus-circle" aria-hidden="true"></i> Queue</li>
-					<li><i class="fa fa-play-circle" aria-hidden="true"></i> Play</li>
-					<li><i class="fa fa-share-alt" aria-hidden="true"></i> Share</li>
-				  </ul>
-				</div>
+			<div class="col-md-4">
+			  <div class="input-container">
+				<i class="fa fa-user"></i>
+				<input type="text" name="name" placeholder="First Name" />
+			  </div>
+			  <div class="input-container">
+				<i class="fa fa-user"></i>
+				<input type="text" name="lastname" placeholder="Last Name" />
+			  </div>
+			  <div class="input-container">
+				<i class="fa fa-envelope"></i>
+				<input type="text" name="email" placeholder="E-Mail Adress" />
+			  </div>
+			  <div class="input-container">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<input type="tel" name="phone" placeholder="Phone Number" />
+			  </div>
+			  <div class="input-container">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<input type="text" name="adress" placeholder="Adress" />
 			  </div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
+			  <textarea rows="4" cols="50" name="message" placeholder="What's on your mind?"></textarea>
 			</div>
 		  </div>
+		  <input type="submit" value="Submit" />
 		</form>
 	  </div>
 	</div>
@@ -71,12 +82,10 @@
 	  </div>
 	</div>
 	<footer class="text-white">
-	  <div class="copyrights">© Copyright 2016 <span>OneSound</span><br />All other copyrights and trademarks are property of their respective owners.</div>
+	  <div class="copyrights">© Copyright 2016 <span>OneSound - Grupo 10</span><br />All other copyrights and trademarks are property of their respective owners.</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	var Glitch = (function () {
 		function Glitch() {

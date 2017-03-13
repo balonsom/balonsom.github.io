@@ -1,0 +1,23 @@
+[
+	{
+		"nombre": "Cartelera de Cine",
+		"titulo": "Cartelera Cine",
+		"descripcion": "Cartelera de las últimas ocho películas que actualmente se encuentran en tus cines favoritos. Trailers, reparto, datos relevantes y mucho más sobre las películas actuales.",
+		"link": "http://localhost/github/A06",
+		"imagen": "A06.png"
+	},
+	{
+		"nombre": "OneSound",
+		"titulo": "OneSound",
+		"descripcion": "A leading social sound platform where anyone can find the right music for every moment - on your phone, your computer, your tablet and more.",
+		"link": "http://localhost/github/A09",
+		"imagen": "A09.png"
+	},
+	{
+		"nombre": "Battle Ragnarok Online",
+		"titulo": "Battle RO",
+		"descripcion": "Battle es un proyecto muy esperado, el cual se empezó con el fin de dar a sus jugadores un lugar estable para jugar y divertirse, con la finalidad de crear las Builds que siempre soñaste tener.",
+		"link": "http://battlero.es",
+		"imagen": "battle.png"
+	}
+]
