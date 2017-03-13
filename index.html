@@ -196,10 +196,29 @@
 		var projects = "";
 		var menu = "";
 		for(var i = 0; i < arr.length; i++) {
-			projects += '<div class="col-md-4"><a href="'+arr[i].link+'" title="Ver página" target="_blank"><div class="project-card"><div class="project-header" style="background-image:url(img/projects/'+
-			arr[i].imagen+')"></div><div class="project-content"><p class="title">'+arr[i].nombre+'</p><p class="description">'+
-			arr[i].descripcion+'</p></div></div></a></div>';
-			menu += '<li><a href="'+arr[i].link+'">'+arr[i].titulo+'</a></li>';
+			if(!arr[i].fechaRealizacion){
+				arr[i].fechaRealizacion = '<span class="not-applicable">En proceso</span>';
+			}
+			if(arr[i].disponibilidad == true){
+				projects += '<div class="col-md-4">'+
+				'<div class="project-card" onclick="location.href=&quot;'+arr[i].url+'&quot;"><div class="project-header" style="background-image:url(img/projects/'+arr[i].imagen+')">'+
+				'<div class="project-mask">';
+				var miembros = arr[i].miembros;
+				if(miembros.length){
+					projects += '<ul class="project-members">';
+					for(var j = 0; j < miembros.length; j++){
+						projects += '<li><a href="" title="'+miembros[j].nombre+' '+miembros[j].primerApellido+'"><i class="fa fa-user-circle fa-fw fa-2x"></i></a></li>'
+					}
+					projects += '</ul>';
+				}
+				projects += '</div></div><div class="project-content"><p class="title">'+arr[i].nombre+'</p><p class="description">'+arr[i].descripcion+'</p>'+
+				'<p class="fecha"><span>Finalizado el:</span> '+arr[i].fechaRealizacion+'</p></div></div></div>';
+				menu += '<li><a href="'+arr[i].url+'">'+arr[i].titulo+'</a></li>';
+			} else {
+				projects += '<div class="col-md-4"><div class="project-card"><div class="project-header" style="background-image:url(img/projects/'+
+				arr[i].imagen+')"><div class="indicator">Not available</div></div><div class="project-content"><p class="title">'+arr[i].nombre+'</p><p class="description">'+
+				arr[i].descripcion+'</p><p class="fecha"><span>Finalizado el:</span> '+arr[i].fechaRealizacion+'</p></div></div></div>';
+			}
 		}
 		document.getElementById('projects-wrapper').innerHTML = projects;
 		document.getElementById('nav-menu').innerHTML = menu;

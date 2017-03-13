@@ -34,6 +34,7 @@ header h2{
 }
 header .container{
 	padding-top:150px;
+	padding-bottom:150px;
 	text-align:center;
 }
 header nav{
@@ -46,7 +47,7 @@ header nav{
 }
 .menu{list-style:none;margin:0;padding:0;}
 .menu li{display:inline-block;padding:0;margin:0;background-color:rgba(255,255,255,0);transition:all 400ms;cursor:pointer;}
-.menu:after,.menu li:after{
+.menu:after,.menu li:after,.project-members li:after{
 	display:block;
 	content:'';
 	clear:both;
@@ -195,6 +196,8 @@ section h1{
 footer{padding:30px;background-color:#2d2d2d;}
 .copyright{color:rgba(255,255,255,.4);text-align:center;}
 .copyright span{font-weight:700;}
+.not-applicable{font-style:italic;opacity:.7;}
+.fecha>span:not(.not-applicable){padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.7);}
 #projects-wrapper{margin-top:100px;}
 #projects-wrapper a{text-decoration:none;}
 .project-card{
@@ -206,12 +209,46 @@ footer{padding:30px;background-color:#2d2d2d;}
 	overflow:hidden;
 	color:#fff;
 }
+.project-card:hover{cursor:pointer;}
 .project-header{
+	position:relative;
 	padding:100px 30px;
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:cover;
 	box-shadow:inset 0 10px 35px rgba(0,0,0,.75);
+}
+.project-header .indicator{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#fff;
+	padding:3px 5px;
+	border-radius:2px;
+	color:#969696;
+	font-size:10px;
+	font-weight:700;
+	opacity:.5;
+	transition:opacity .3s;
+}
+.project-card:hover .indicator{opacity:1;}
+.project-mask{
+	visibility:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	padding:17px 30px;
+	opacity:0;
+	text-align:left;
+	-webkit-transition:visibility 0s, opacity 0.3s linear;
+	transition:visibility 0s, opacity 0.3s linear;
+}
+.project-card:hover .project-mask{
+	visibility:visible;
+	opacity:1;
+	background-color:rgba(255,255,255,.75);
 }
 .project-content{
 	padding:15px 5px 0;
@@ -227,8 +264,20 @@ footer{padding:30px;background-color:#2d2d2d;}
 	-webkit-line-clamp:3;
 	-webkit-box-orient:vertical; 
 }
+.project-members{
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.project-members li{float:left;text-align:center;font-size:22px;}
+.project-members li a{color:#627b80;}
 @media (max-width: 991px){
-	.col-md-9 {margin-top:30px;}
+	.col-md-9{margin-top:30px;}
+	.col-md-4+.col-md-4{margin-top:30px;}
 }
 @media (max-width: 767px) {
 	.col-md-9 {margin-top:30px;}
